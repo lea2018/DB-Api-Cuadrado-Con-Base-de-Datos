@@ -11,13 +11,13 @@ public class Estudiante
     public int IdEstudiante { get; set; }
 
     [Column("nombre")]
-    public string Nombre { get; set; }
+    public string Nombre { get; set; } = string.Empty;
 
     [Column("apellido")]
-    public string Apellido { get; set; }
+    public string Apellido { get; set; } = string.Empty;
 
     [Column("matricula")]
-    public string Matricula { get; set; }
+    public string Matricula { get; set; } = string.Empty;
 
     [Column("fecha_nacimiento")]
     public DateTime? FechaNacimiento { get; set; }
@@ -26,11 +26,11 @@ public class Estudiante
     public DateTime? FechaIngreso { get; set; }
 
     [Column("carrera")]
-    public string Carrera { get; set; }
+    public string Carrera { get; set; } = string.Empty;
 
     [Column("correo")]
-    public string Correo { get; set; }
+    public string Correo { get; set; } = string.Empty;
 
     [Column("telefono")]
-    public string Telefono { get; set; }
+    public string Telefono { get; set; } = string.Empty;
 }
